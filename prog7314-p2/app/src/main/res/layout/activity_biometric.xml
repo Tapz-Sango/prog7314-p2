@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/biometricRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigo_background"
+    tools:context=".BiometricActivity">
+
+    <LinearLayout
+        android:id="@+id/biometricContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37">
+
+        <ImageView
+            android:id="@+id/imgBiometricLogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="NaviGo logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/navigo_logo" />
+
+        <TextView
+            android:id="@+id/tvBiometricTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Secure your account"
+            android:textColor="@color/navigo_text"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBiometricDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Use fingerprint or facial recognition&#10;to keep your account secure."
+            android:textColor="@color/navigo_muted"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnEnableBiometrics"
+            android:layout_width="260dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/navigo_teal"
+            android:text="Enable Biometrics"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvMaybeLater"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Maybe Later"
+            android:textColor="@color/navigo_navy"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

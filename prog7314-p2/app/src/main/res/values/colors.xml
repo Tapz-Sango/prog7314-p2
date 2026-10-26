@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light">#3B82C4</color>
+    <color name="navigo_teal">#12A99B</color>
+    <color name="navigo_blue">#1767B2</color>
+    <color name="navigo_navy">#17365D</color>
+    <color name="navigo_background">#F7F9FC</color>
+    <color name="navigo_text">#171717</color>
+    <color name="navigo_muted">#6B7280</color>
+    <color name="navigo_light_grey">#E9E9E9</color>
+</resources>

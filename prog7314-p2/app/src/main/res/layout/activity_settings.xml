@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigo_background">
+
+    <TextView
+        android:id="@+id/settingsHeader"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/navigo_teal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Settings"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/settingsHeader"
+        app:layout_constraintBottom_toTopOf="@id/settingsBottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Account"
+                android:textColor="@color/navigo_navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settingProfile"
+                style="@style/NaviGoSettingRow"
+                android:text="♙  Profile" />
+
+            <TextView
+                android:id="@+id/settingBiometrics"
+                style="@style/NaviGoSettingRow"
+                android:text="🔒  Biometrics" />
+
+            <TextView
+                android:id="@+id/settingLogout"
+                style="@style/NaviGoSettingRow"
+                android:text="🚪  Sign Out"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="Preferences"
+                android:textColor="@color/navigo_navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settingLanguage"
+                style="@style/NaviGoSettingRow"
+                android:text="◎  Language" />
+
+            <TextView
+                android:id="@+id/settingNotifications"
+                style="@style/NaviGoSettingRow"
+                android:text="🔔  Notifications" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="Travel Preferences"
+                android:textColor="@color/navigo_navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settingPreferredTransports"
+                style="@style/NaviGoSettingRow"
+                android:text="🚌  Preferred Transports" />
+
+            <TextView
+                android:id="@+id/tvPreferredTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingBottom="8dp"
+                android:text="Preferred Transports: Bus"
+                android:textColor="@color/navigo_muted"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/settingWeatherAlerts"
+                style="@style/NaviGoSettingRow"
+                android:text="☁  Weather Alerts" />
+
+            <TextView
+                android:id="@+id/tvWeatherPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingBottom="8dp"
+                android:text="Weather Alerts: Off"
+                android:textColor="@color/navigo_muted"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="About"
+                android:textColor="@color/navigo_navy"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/settingPrivacy"
+                style="@style/NaviGoSettingRow"
+                android:text="◉  Privacy Policy" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/settingsBottomNav"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/navSettingsHome"
+            style="@style/NaviGoNavItem"
+            android:text="⌂&#10;Home" />
+
+        <TextView
+            android:id="@+id/navSettingsAlerts"
+            style="@style/NaviGoNavItem"
+            android:text="♧&#10;Alerts" />
+
+        <TextView
+            android:id="@+id/navSettingsTrips"
+            style="@style/NaviGoNavItem"
+            android:text="🚌&#10;Trips" />
+
+        <TextView
+            android:id="@+id/navSettingsCurrent"
+            style="@style/NaviGoNavItem"
+            android:text="⚙&#10;Settings"
+            android:textColor="@color/navigo_teal"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
